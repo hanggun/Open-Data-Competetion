@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="28px" viewBox="0 0 23 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icons/24px/Location</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="80.6238185%" y1="0%" x2="19.3761815%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#BD7AE3" offset="0%"></stop>
+            <stop stop-color="#8461C9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Android备份-7" transform="translate(-45.000000, -90.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="搜索" transform="translate(23.000000, 68.000000)">
+                <g id="Form/Direction/Default">
+                    <g id="Icons/24px/Location">
+                        <g transform="translate(22.000000, 22.000000)">
+                            <path d="M11.5053333,0 C6.22533333,0 0.705333333,4.08 0.705333333,10.8 C0.705333333,17.16 10.3053333,26.88 10.6653333,27.24 C10.9053333,27.48 11.1453333,27.6 11.5053333,27.6 C11.8653333,27.6 12.1053333,27.48 12.3453333,27.24 C12.7053333,26.88 22.3053333,17.16 22.3053333,10.8 C22.3053333,4.08 16.7853333,0 11.5053333,0 Z M11.5053333,14.4 C9.46533333,14.4 7.90533333,12.84 7.90533333,10.8 C7.90533333,8.76 9.46533333,7.2 11.5053333,7.2 C13.5453333,7.2 15.1053333,8.76 15.1053333,10.8 C15.1053333,12.84 13.5453333,14.4 11.5053333,14.4 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

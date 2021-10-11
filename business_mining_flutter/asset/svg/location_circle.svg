@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>编组</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Android备份-13" transform="translate(-576.000000, -436.000000)">
+            <g id="编组" transform="translate(576.000000, 436.000000)">
+                <circle id="椭圆形" stroke="#979797" cx="17" cy="17" r="16.5"></circle>
+                <g id="位置" transform="translate(7.480000, 7.480000)" fill-rule="nonzero">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="19.04" height="19.04"></rect>
+                    <path d="M9.52,0 C5.73142857,0 2.72,2.9512 2.72,6.664 C2.72,11.6144 9.52,19.04 9.52,19.04 C9.52,19.04 16.32,11.6144 16.32,6.664 C16.32,2.9512 13.3085714,0 9.52,0 Z M9.52,9.044 C8.16,9.044 7.09142857,7.9968 7.09142857,6.664 C7.09142857,5.3312 8.16,4.284 9.52,4.284 C10.88,4.284 11.9485714,5.3312 11.9485714,6.664 C11.9485714,7.9968 10.88,9.044 9.52,9.044 Z" id="形状" fill="#647087"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
