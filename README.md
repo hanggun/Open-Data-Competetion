@@ -1,5 +1,8 @@
 # Open-Data-Competetion
 浙江省北大信息技术高等研究院-商探团队的开放数据应用大赛作品——企业经营信用风险评估系统
+
+<img src="https://github.com/hanggun/Open-Data-Competetion/blob/main/pictures/product1.png" width="50%" height="50%">
+
 ![img](pictures/product1.png)
 ![product2](pictures/product2.png)
 
