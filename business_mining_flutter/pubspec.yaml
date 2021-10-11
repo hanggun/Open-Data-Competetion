@@ -1,0 +1,77 @@
+name: business_mining
+description: A new Flutter application.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  logger: ^0.9.4
+  cupertino_icons: ^1.0.0
+  shared_preferences: ^0.5.6+2
+  dio: ^3.0.9
+  provider: ^4.3.1
+  fluttertoast: ^3.0.3
+  path: ^1.7.0
+  path_provider: ^1.6.14
+  package_info: ^0.4.0+17
+  permission_handler: ^5.0.1+1
+  # https://github.com/peng8350/flutter_pulltorefresh/blob/master/README_CN.md
+  pull_to_refresh: ^1.6.3
+  flutter_svg: ^0.18.0
+  intl: ^0.16.1
+  fl_chart: ^0.10.1
+  # html文本格式显示
+  # https://pub.dev/packages/flutter_widget_from_html_core
+  flutter_widget_from_html_core: ^0.5.0
+  # url跳转，打开其他应用
+  url_launcher: ^5.5.0
+  # 打开应用市场
+  launch_review: ^2.0.0
+  # webview
+  webview_flutter: ^0.3.22+1
+  flutter_webview_plugin: ^0.3.11
+  # 分享组件
+  share: ^0.6.4+3
+  # 路由组件 http://book.flutterj.com/chapter2/my_route.html
+  nav_router: ^0.0.7
+  event_bus: ^1.1.1
+  flushbar: ^1.10.4
+
+  flutter_app_upgrade: ^1.1.0
+  # 图像选择
+  image_picker: ^0.6.7+4
+  device_info: ^0.4.2+8
+#  orientation: ^1.2.0
+  #唤醒link https://pub.dev/packages/uni_links
+  uni_links: ^0.4.0
+#  page_view_indicators: ^1.4.0
+#  custom_pop_up_menu: ^1.1.0
+  cached_network_image: ^2.3.3
+  flutter_swiper: ^1.1.6
+  flutter_slidable: ^0.5.7
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+#  intl_translation: ^0.17.10
+
+
+# The following section is specific to Flutter.
+flutter:
+
+  uses-material-design: true
+  assets:
+    - asset/img/
+    - asset/svg/
+  fonts:
+    - family: iconfont
+      fonts:
+        - asset: asset/font/iconfont.ttf

@@ -1,0 +1,103 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+android {
+
+    compileSdkVersion 28
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    defaultConfig {
+        applicationId "cn.org.aiit.demo"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                UMENG_APPKEY        : "",
+                UMENG_MESSAGE_SECRET: "",
+                UMENG_CHANNEL       : "flutter",
+                XIAOMI_APPID        : "",
+                XIAOMI_APPKEY       : "",
+                VIVO_KEY            : "",
+                VIVO_APPID          : "",
+                OPPO_APPSECRET      : "",
+                OPPO_APPKEY         : "",
+                HUAWEI_APPID        : "",
+                MEIZU_APPID         : "",
+                MEIZU_APPKEY        : ""
+        ]
+    }
+
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.debug
+            ndk {
+                abiFilters 'armeabi-v7a'
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    android.applicationVariants.all {
+        variant ->
+            variant.ext.buglyAppVersion = defaultConfig.versionName + '_' + buildType.name
+            variant.outputs.all {
+                // 此处指定生成的apk文件名
+                outputFileName = "商探_${releaseTime()}_${defaultConfig.versionName}+${defaultConfig.versionCode}.apk"
+            }
+    }
+
+}
+
+static def releaseTime() {
+    return new Date().format("yyyyMMdd")
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.multidex:multidex:2.0.1'
+}
